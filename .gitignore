@@ -1,5 +1,10 @@
 .venv/
 __pycache__/
 *.pyc
+*.pyo
 captured_leads.json
 .env
+.env.local
+*.egg-info/
+dist/
+.DS_Store
