@@ -1,0 +1,9 @@
+livekit-agents>=0.12.0
+livekit-plugins-deepgram>=0.12.0
+livekit-plugins-anthropic>=0.12.0
+livekit-plugins-cartesia>=0.12.0
+livekit-plugins-silero>=0.12.0
+livekit-api>=0.7.0
+fastapi
+uvicorn[standard]
+python-dotenv

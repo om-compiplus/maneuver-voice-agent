@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk to Founder — Maneuver</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- ── Header ─────────────────────────────────────────────── -->
+    <header>
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div>
+          <h1>Talk to Founder</h1>
+          <p>Live voice conversation with Alex at Maneuver</p>
+        </div>
+      </div>
+      <div class="controls">
+        <span id="statusBadge" class="status idle">Ready</span>
+        <button id="startBtn" class="btn-primary">🎙 Start Call</button>
+        <button id="stopBtn"  class="btn-stop" disabled>⬛ End Call</button>
+      </div>
+    </header>
+
+    <!-- ── Main layout ────────────────────────────────────────── -->
+    <main>
+
+      <!-- Left: conversation transcript -->
+      <section class="left-panel">
+        <div class="panel-card conversation-card">
+          <div class="card-title">
+            <span>Conversation</span>
+            <span id="modeTag" class="mode-tag">discovery</span>
+          </div>
+
+          <!-- Agent avatar + state ring -->
+          <div class="avatar-row">
+            <div id="agentAvatar" class="agent-avatar">
+              <span class="avatar-initials">A</span>
+              <div class="pulse-ring"></div>
+            </div>
+            <div class="avatar-meta">
+              <strong>Alex</strong>
+              <span class="muted">Founder · Maneuver</span>
+            </div>
+          </div>
+
+          <div id="messages" class="messages"></div>
+        </div>
+      </section>
+
+      <!-- Right: visuals + lead capture -->
+      <aside class="right-panel">
+
+        <!-- Live visual panel -->
+        <div class="panel-card">
+          <div class="card-title">Live Context</div>
+          <div id="visualArea" class="visual-area">
+            <div class="visual-placeholder">
+              <p>Ask about <em>services</em>, <em>process</em>, <em>pricing</em>, or <em>team</em> to see context cards appear here.</p>
+              <p>During discovery, captured fields populate below in real time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Captured discovery fields -->
+        <div class="panel-card">
+          <div class="card-title">Captured Discovery</div>
+          <div id="leadPanel" class="lead-panel">
+            <div class="lead-row" id="row-name">
+              <span class="lead-label">Name</span>
+              <span class="lead-value" id="field-name">—</span>
+            </div>
+            <div class="lead-row" id="row-company">
+              <span class="lead-label">Company</span>
+              <span class="lead-value" id="field-company">—</span>
+            </div>
+            <div class="lead-row" id="row-problem">
+              <span class="lead-label">Problem</span>
+              <span class="lead-value" id="field-problem">—</span>
+            </div>
+            <div class="lead-row" id="row-timeline">
+              <span class="lead-label">Timeline</span>
+              <span class="lead-value" id="field-timeline">—</span>
+            </div>
+            <div class="lead-row" id="row-budget">
+              <span class="lead-label">Budget</span>
+              <span class="lead-value" id="field-budget">—</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="/static/script.js"></script>
+</body>
+</html>
