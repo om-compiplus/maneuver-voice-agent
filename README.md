@@ -1,7 +1,7 @@
-# Talk to Founder — Voice AI Agent for Maneuver
+# Talk to Founder — Voice AI Agent 
 
 A real-time voice AI web app built on **LiveKit Agents** that lets any visitor have
-a live voice conversation with an AI agent representing Maneuver's founder.
+a live voice conversation with an AI agent.
 
 The agent runs a natural discovery call (captures name, company, problem, timeline,
 budget) and answers questions about Maneuver from a knowledge base — with a
